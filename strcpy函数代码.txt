@@ -1,6 +1,9 @@
+#include <iostream>
+using namespace std;
+int len;
 char* StrCpy(char* src)
 {
-	int len = 0;
+	 len = 0;
 	for (; src[len] != '\0'; ++len)	;
 	int len = strlen(src);
 	char *p = (char*)malloc((len + 1)*sizeof(char));
@@ -10,4 +13,16 @@ char* StrCpy(char* src)
 	}
 	p[len] = '\0';
 	return p;
+}
+int main()
+{
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	char c[] = "abc";
+	char* cc = StrCpy(c);
+	for (int i = 0; i < len; ++i)
+	{
+		cout << cc[i];
+	}
+	return 0;
 }
