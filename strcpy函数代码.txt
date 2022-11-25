@@ -14,6 +14,7 @@ char* StrCpy(char* src)
 	p[len] = '\0';
 	return p;
 }
+本地编辑
 int main()
 {
 	ios::sync_with_stdio(false);
